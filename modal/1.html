@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./a.css">
+</head>
+<body>
+    <h1>modal window</h1>
+
+    <button data-modal-button="modal-1" class="btn btn-outline-primary mb-1" type="button">
+        opem modal window
+    </button>
+
+    <div id = "modal-1" data-modal class="fade-block hidden">
+        <div class="modal-window">
+            <div class="card">
+                <div class="card-header">
+                    modal window 1
+                </div>
+                <div class="card-body">
+                    <p>
+                        how are you today bro.what you gonna do today
+                    </p>
+                    <button
+                    id="qwer"
+                    data-modal-close
+                    type="button"
+                    class="btn btn-dark">
+                    close window
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./a.js"></script>
+</body>
+</html>
