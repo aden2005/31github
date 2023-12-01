@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="m.css">
+</head>
+<body>
+    <h1>Modal window</h1>
+    <button data-modal-button="modal-1" class="btn btn-outline-primary mb-1" type="button">Open modal window №1</button>
+    <button data-modal-button="modal-2" class="btn btn-outline-primary mb-2" type="button">Open modal window №2</button>
+    <button data-modal-button="modal-3" class="btn btn-outline-primary mb-3" type="button">Open modal window №3</button>
+
+    <div id="modal-1" data-modal class="fade-block hidden">
+        <div class="modal-window">
+            <div class="card">
+                <div class="card-header">
+                    modal window №1
+                </div>
+                <div class="card-body">
+                    <p>Mercedes-Benz E-class</p>
+                    <button id="qwer" data-modal-close type="button" class="btn btn-dark">
+                        Close window
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-2" data-modal class="fade-block hidden">
+        <div class="modal-window">
+            <div class="card">
+                <div class="card-header">
+                    modal window №2
+                </div>
+                <div class="card-body">
+                    <p>Mercedes-Benz S-class</p>
+                    <button id="qwer" data-modal-close type="button" class="btn btn-dark">
+                        Close window
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-3" data-modal class="fade-block hidden">
+        <div class="modal-window">
+            <div class="card">
+                <div class="card-header">
+                    modal window №3
+                </div>
+                <div class="card-body">
+                    <p>Mercedes-Benz G-class</p>
+                    <button id="qwer" data-modal-close type="button" class="btn btn-dark">
+                        Close window
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="m.js"></script>
+</body>
+</html>
