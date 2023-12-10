@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% if product %}
+<h1>{{ product.title }}</h1>
+<p>Price: $ {{ product.price }}    Created date: {{ product.created|date:"d/m/Y" }}</p>
+<div><img src="{{ product.featured_image.url }}" alt="Product photo"></div>
+<p>{{ product.description }}</p>
+
+
+<a href="{% url 'editProduct' product.id %}">Edit Product</a>
+<a href="{% url 'deleteProduct' product.id %}">Delete Product</a>
+
+{% else %}
+<h1>404 - Not found</h1>
+
+{% endif %}
+
+
+{% endblock %}
+
+{% block title %}Single Product{% endblock %}
