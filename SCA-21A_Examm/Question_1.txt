@@ -1,0 +1,3 @@
+With the Git Blame command we can find out who changed a particular line, that is to say we can see when each line
+was last modified and who the author of the modifications was.
+To use this command we have to write git blame <file name or file path>.

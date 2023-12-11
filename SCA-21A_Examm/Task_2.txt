@@ -1,0 +1,3 @@
+Git Revert command instead of deleting commits in the commit history, revert will create a new commit that inverses
+the changes specified. This command needs a commit identifier (hash of commit). The revert command
+can "undo" not only the last commit, but also any other commit from the project history.
